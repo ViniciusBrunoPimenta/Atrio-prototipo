@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Átrio Esquadrias</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700|Playfair+Display:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="splash">
+    <div class="splash-bg" id="splash-bg"></div>
+    <div class="splash-content">
+      <div class="splash-logo">
+        <span>Átrio</span>
+        <span class="splash-esquadrias">Esquadrias</span>
+      </div>
+      <button id="splash-enter" class="splash-btn">Entrar no Site</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container header-container">
+      <div class="logo">Átrio</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#obras">Obras</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Soluções arquitetônicas em alumínio e vidro</h1>
+      <a href="#contato" class="btn-hero">Solicite um Orçamento</a>
+    </div>
+  </section>
+
+  <!-- Sobre a Empresa -->
+  <section id="empresa" class="sobre">
+    <div class="container sobre-container">
+      <h2>Sobre a Átrio Esquadrias</h2>
+      <div class="sobre-content">
+        <div class="sobre-text">
+          <p>Desde 1997, a Átrio Esquadrias oferece soluções inovadoras em esquadrias de alumínio, fachadas de vidro e revestimentos em ACM. Nossa missão é transformar projetos arquitetônicos em obras de arte, com qualidade, sofisticação e compromisso com nossos clientes.</p>
+          <ul class="valores-lista">
+            <li><span class="icon-missao"></span> Missão: Excelência em soluções arquitetônicas</li>
+            <li><span class="icon-valores"></span> Valores: Inovação, Qualidade, Compromisso</li>
+            <li><span class="icon-experiencia"></span> Experiência: +25 anos no mercado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soluções -->
+  <section id="solucoes" class="solucoes">
+    <div class="container">
+      <h2>Nossas Soluções</h2>
+      <div class="cards-solucoes">
+        <div class="card-solucao">
+          <div class="icon-solucao icon-esquadrias"></div>
+          <h3>Esquadrias de Alumínio</h3>
+          <p>Durabilidade, design e eficiência para seu projeto.</p>
+          <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+        <div class="card-solucao">
+          <div class="icon-solucao icon-fachadas"></div>
+          <h3>Fachadas de Vidro</h3>
+          <p>Modernidade e sofisticação em cada detalhe.</p>
+          <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+        <div class="card-solucao">
+          <div class="icon-solucao icon-acm"></div>
+          <h3>Revestimento em ACM</h3>
+          <p>Versatilidade e acabamento premium.</p>
+          <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+        <div class="card-solucao">
+          <div class="icon-solucao icon-vidros"></div>
+          <h3>Vidros Temperados</h3>
+          <p>Segurança e transparência para seu ambiente.</p>
+          <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Obras -->
+  <section id="obras" class="galeria">
+    <div class="container">
+      <h2>Galeria de Obras</h2>
+      <div class="galeria-grid" id="galeria-grid">
+        <!-- Imagens da galeria serão inseridas via JS -->
+      </div>
+      <div class="galeria-controles">
+        <button id="galeria-prev">&#10094;</button>
+        <button id="galeria-next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Orçamento -->
+  <section id="contato" class="contato">
+    <div class="container contato-container">
+      <h2>Solicite um Orçamento</h2>
+      <form id="form-orcamento" novalidate>
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="tel" name="telefone" placeholder="Telefone" required>
+        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn-enviar">Enviar Proposta</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Chat Flutuante -->
+  <div class="chat-flutuante" id="chat-flutuante">
+    <div class="chat-icone" id="chat-icone">
+      <span class="icon-whatsapp"></span>
+    </div>
+    <div class="chat-janela" id="chat-janela">
+      <div class="chat-header">Atendimento Átrio</div>
+      <div class="chat-body">
+        <p>Olá! Como podemos ajudar?</p>
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn-whatsapp">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p><strong>Contato:</strong> (99) 99999-9999 | contato@atrioesquadrias.com.br<br>Rua Exemplo, 123, Centro, Cidade/UF</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="icon-facebook" aria-label="Facebook"></a>
+        <a href="#" class="icon-instagram" aria-label="Instagram"></a>
+      </div>
+      <div class="footer-copy">
+        <p>Todos os direitos reservados – Átrio Esquadrias ©</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
